@@ -27,7 +27,7 @@ jobs:
 
       - name: Build RPM package
         run: |
-          rpmbuild -bb ~/work/FilesCounter/FilesCounter/rpmbuild/SPECS/FilesCounter.spec
+          rpmbuild -bs rpmbuild/SPECS/FilesCounter.spec
           
 
       - name: Upload DEB package
