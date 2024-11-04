@@ -1,0 +1,5 @@
+Package: FilesCounter
+Version: 0.1
+Maintainer: localmember
+Architecture: all
+Description: program to count how many files some directory contains.It doesn't count oneliners,symlinks and directories
