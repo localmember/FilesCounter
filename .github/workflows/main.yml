@@ -32,7 +32,7 @@ jobs:
       - name: Build RPM package
         run: |
           mkdir -p ~/rpmbuild/SOURCES/
-          cp ./rpmbuild/SOURCES/filescounter_0.0.1.tar.gz ~/rpmbuild/SOURCES/
+          cp rpmbuild/SOURCES/filescounter_0.0.1.tar.gz ~/rpmbuild/SOURCES/
           rpmbuild -bs rpmbuild/SPECS/FilesCounter.spec
           
 
