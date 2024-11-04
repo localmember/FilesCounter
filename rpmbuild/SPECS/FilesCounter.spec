@@ -5,7 +5,7 @@ Summary:        A simple script to count files in specified directory
 BuildArch:      noarch
 
 License:        GPL
-Source0:        %{name}-%{version}.tar.gz
+Source0:        .SOURCES/%{name}-%{version}.tar.gz
 
 Requires:       bash
 
