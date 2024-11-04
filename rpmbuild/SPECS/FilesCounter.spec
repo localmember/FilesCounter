@@ -18,7 +18,7 @@ A demo RPM build
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}
-cp ~/FilesCounter/%{name}.sh $RPM_BUILD_ROOT/%{_bindir}
+cp ~/%{name}.sh $RPM_BUILD_ROOT/%{_bindir}
 
 %files
 %{_bindir}/%{name}.sh
