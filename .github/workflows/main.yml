@@ -40,10 +40,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: deb-package
-          path: ~DEBIAN//filescounter_0.1_all.deb
+          path: DEBIAN//filescounter_0.1_all.deb
 
       - name: Upload RPM package
         uses: actions/upload-artifact@v4
         with:
           name: rpm-package
-          path: ~/rpmbuild/SRPMS/x86_64/filescounter-0.0.1-1.src.rpm
+          path: /home/runner/rpmbuild/SRPMS/filescounter-0.0.1-1.src.rpm
