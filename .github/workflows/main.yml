@@ -24,7 +24,7 @@ jobs:
       - name: Build DEB package
         run: |
           dpkg-deb --build . DEBIAN/
-          mv DEBIAN.deb filescounter.deb
+          mv DEBIAN/filescounter.sh .
 
       - name: Build RPM package
         run: |
@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: deb-package
-          path: your-package-name.deb
+          path: ~filescounter.deb
 
       - name: Upload RPM package
         uses: actions/upload-artifact@v4
