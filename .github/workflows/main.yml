@@ -27,7 +27,7 @@ jobs:
 
       - name: Build RPM package
         run: |
-          rpmbuild -bb rpmbuild/SPECS/filescounter.spec
+          rpmbuild -bb . rpmbuild/SPECS/filescounter.spec
 
       - name: Upload DEB package
         uses: actions/upload-artifact@v4
