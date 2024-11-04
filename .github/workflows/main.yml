@@ -24,6 +24,10 @@ jobs:
       - name: Build DEB package
         run: |
           dpkg-deb --build . DEBIAN/
+      
+      - name: Create source tarball
+        run: |
+          tar -czf rpmbuild/SOURCES/filescounter-0.0.1.tar.gz .  # Adjust the version as needed
 
       - name: Build RPM package
         run: |
