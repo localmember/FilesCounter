@@ -27,7 +27,6 @@ jobs:
       
       - name: Create source tarball
         run: |
-              # Adjust the version as needed
 
       - name: Build RPM package
         run: |
