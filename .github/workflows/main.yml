@@ -25,24 +25,20 @@ jobs:
         run: |
           dpkg-deb --build . DEBIAN/
       
-      - name: Create source tarball
-        run: |
 
       - name: Build RPM package
         run: |
-          mkdir -p ~/rpmbuild/SOURCES/ 
-          cp rpmbuild/SOURCES/filescounter-0.0.1.tar.gz ~/rpmbuild/SOURCES/
-          rpmbuild -bs rpmbuild/SPECS/FilesCounter.spec
+          rpmbuild -bs rpmbuild/SPECS/filescounter.spec
           
 
       - name: Upload DEB package
         uses: actions/upload-artifact@v4
         with:
           name: deb-package
-          path: DEBIAN//filescounter_0.1_all.deb
+          path: DEBIAN//filescounter_1.0_all.deb
 
       - name: Upload RPM package
         uses: actions/upload-artifact@v4
         with:
           name: rpm-package
-          path: /home/runner/rpmbuild/SRPMS/filescounter-0.0.1-1.src.rpm
+          path: /home/runner/rpmbuild/SRPMS/filescounter-1.0-1.src.rpm
