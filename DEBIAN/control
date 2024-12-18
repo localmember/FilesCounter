@@ -1,0 +1,7 @@
+Package: filescounter
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: localmember
+Description: simple bash script to count number of non-oneliner files in directory passed in arguments
