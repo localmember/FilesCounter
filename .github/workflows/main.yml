@@ -30,8 +30,8 @@ jobs:
         run: |
              ls -R
              mkdir -p /home/runner/rpmbuild/SOURCES
-             cp filescounter.bash /home/runner/rpmbuild/SOURCES/
-             rpmbuild -bs rpmbuild/SPECS/filescounter.spec
+             cp ./rpmbuild/SOURCES/filescounter.bash /home/runner/rpmbuild/SOURCES/
+             rpmbuild -bs ./rpmbuild/SPECS/filescounter.spec
           
 
       - name: Upload DEB package
